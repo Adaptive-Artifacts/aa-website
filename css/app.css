@@ -1,0 +1,76 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+body {
+    font-family: 'DM Mono', 'Inter', sans-serif; /* Fallback in case 'Inter' isn't available */
+    background-color: #0D27B2;
+    overflow: hidden;
+    position: relative;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Typography */
+h1 {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0); /* This is fully transparent. Consider removing or adjusting */
+}
+
+p {
+    color: #00FFBB;
+    font-size: smaller;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-justify:center;
+}
+
+/* Logo and Image */
+div.logo {
+    width: 45vw;
+    height: 45vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%); /* Center the div */
+    z-index: 0;
+    background-color: #0D27B2;
+    border: 2px solid #0D27B2;
+    border-radius: 2.5rem;
+    /* box-shadow: 0 0 5px #00FFBB, 0 0 10px #00FFBB; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.logo img {
+    width: 100%;
+    z-index: 9; /* Consider if this z-index is necessary, as the image is inside the .logo div */
+}
+
+/* Adjustments for paragraphs inside the logo div */
+div.banner {
+    padding-top: 1.25rem;
+    padding-left: 3.5rem;
+    padding-right: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
