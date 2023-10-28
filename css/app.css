@@ -58,11 +58,11 @@ div.logo {
     padding: 0 14px 0px 24px;
 }
 
-/* @media (max-width: 800px), (max-height: 800px) {
+@media (max-height: 700px) {
     div.logo {
-      top: 0px;
+      top: 69px;
     }
-} */
+}
 
 .logo img {
     width: 100%;
