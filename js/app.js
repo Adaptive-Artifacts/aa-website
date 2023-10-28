@@ -19,7 +19,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(window.innerWidth, window.innerHeight);
+  resizeCanvas(window.innerWidth+100, window.innerHeight+100);
   initFlowField(); // Reinitialize the flow field when the window is resized
 }
 

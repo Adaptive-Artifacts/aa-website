@@ -42,9 +42,9 @@ div.logo {
     width: 330px;
     height: 450px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%); /* Center the div */
+    top: calc(50vh - 225px);
+    left: calc(50vw - 165px);
+
     z-index: 0;
     background-color: #0D27B2;
     border: 2px solid #0D27B2;
@@ -56,9 +56,13 @@ div.logo {
     justify-content: center;
 
     padding: 0 14px 0px 24px;
-    
-
 }
+
+/* @media (max-width: 800px), (max-height: 800px) {
+    div.logo {
+      top: 0px;
+    }
+} */
 
 .logo img {
     width: 100%;
