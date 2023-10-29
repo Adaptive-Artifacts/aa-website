@@ -10,6 +10,8 @@ body {
     background-color: #0D27B2;
     overflow: hidden;
     position: relative;
+    min-height: 600px;
+    height: 100vh;
 }
 
 canvas {
@@ -61,6 +63,14 @@ div.logo {
 @media (max-height: 700px) {
     div.logo {
       top: 69px;
+      height:350px;
+    }
+}
+
+@media (max-height: 450px) {
+    div.logo {
+      top: 51px;
+      height:210px;
     }
 }
 
